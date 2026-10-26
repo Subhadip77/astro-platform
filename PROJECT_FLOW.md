@@ -48,8 +48,8 @@ Flow: ⚪ → 🟡 → (YES) → 🔵 → 🟣 → 🟢   (any → 🔴 or ⚫)
 ### PHASE 1 — Core (free tools = lead magnets)
 | ID | Step | Status | Output |
 |----|------|--------|--------|
-| S10 | MySQL 8 schema (utf8mb4) + migrations | 🟣 REVIEW | `db/migrations` |
-| S11 | Backend skeleton (Express, JWT, validation, rate limit) | ⚪ LOCKED | `/backend` |
+| S10 | MySQL 8 schema (utf8mb4) + migrations | 🟢 DONE | `db/migrations` |
+| S11 | Backend skeleton (Express, JWT, validation, rate limit) | 🟣 REVIEW | `/backend` |
 | S12 | Astrology service layer + Redis/DB cache | ⚪ LOCKED | `services/astro` |
 | S13 | Free tool endpoints: kundli, panchang, Rahu Kaal, matching, numerology | ⚪ LOCKED | REST APIs |
 | S14 | Next.js app + i18n (en, hi, bn) | ⚪ LOCKED | `/frontend` |
@@ -358,9 +358,12 @@ If someone told you "Shani's Sade Sati has started", you probably felt worried. 
 | 2026-10-26 | S02 | ACCEPT | S02 accepted by owner. Marked DONE. |
 | 2026-10-26 | S10 | YES | Approved by owner. Building MySQL 8 schema (utf8mb4) and migrations. |
 | 2026-10-26 | S10 | REVIEW | MySQL 8 schema (11 tables) & migration runner built, tested, and applied. All tables utf8mb4_unicode_ci. Set to REVIEW. |
+| 2026-10-26 | S10 | ACCEPT | S10 accepted by owner. Marked DONE. |
+| 2026-10-26 | S11 | YES | Approved by owner. Building Express backend skeleton with JWT, validation, and rate limiting. |
+| 2026-10-26 | S11 | REVIEW | Express skeleton built with JWT auth, Zod validation, rate limiting, AES-256-GCM crypto, and tests. Set to REVIEW. |
 
 ---
 
 ## 9. START HERE
 
-Next suggested step: **S11** (Phase 1 — Backend skeleton). Reply: `YES S11` to begin.
+Next suggested step: **S12** (Phase 1 — Astrology service layer + Redis/DB cache). Reply: `YES S12` to begin.
