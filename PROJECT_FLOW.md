@@ -43,12 +43,12 @@ Flow: ⚪ → 🟡 → (YES) → 🔵 → 🟣 → 🟢   (any → 🔴 or ⚫)
 |----|------|--------|--------|
 | S00 | Repo, folders, `AGENTS.md`, `.gitignore`, `.env.example` | 🟢 DONE | repo skeleton |
 | S01 | Secrets and config (API keys in `.env` only) | 🟢 DONE | config loader |
-| S02 | AstrologyAPI smoke test (1 call per endpoint family) | 🟣 REVIEW | `docs/api-notes.md` |
+| S02 | AstrologyAPI smoke test (1 call per endpoint family) | 🟢 DONE | `docs/api-notes.md` |
 
 ### PHASE 1 — Core (free tools = lead magnets)
 | ID | Step | Status | Output |
 |----|------|--------|--------|
-| S10 | MySQL 8 schema (utf8mb4) + migrations | ⚪ LOCKED | `db/migrations` |
+| S10 | MySQL 8 schema (utf8mb4) + migrations | 🟣 REVIEW | `db/migrations` |
 | S11 | Backend skeleton (Express, JWT, validation, rate limit) | ⚪ LOCKED | `/backend` |
 | S12 | Astrology service layer + Redis/DB cache | ⚪ LOCKED | `services/astro` |
 | S13 | Free tool endpoints: kundli, panchang, Rahu Kaal, matching, numerology | ⚪ LOCKED | REST APIs |
@@ -355,9 +355,12 @@ If someone told you "Shani's Sade Sati has started", you probably felt worried. 
 | 2026-10-26 | S01 | ACCEPT | S01 accepted by owner. Marked DONE. |
 | 2026-10-26 | S02 | YES | Approved by owner. Smoke tests executed across all endpoint families. |
 | 2026-10-26 | S02 | REVIEW | Smoke tests completed. Multilingual verified (en, hi, bn). KP/Varshaphal/Lalkitab supported. PDF is 405 (separate tier). Set to REVIEW. |
+| 2026-10-26 | S02 | ACCEPT | S02 accepted by owner. Marked DONE. |
+| 2026-10-26 | S10 | YES | Approved by owner. Building MySQL 8 schema (utf8mb4) and migrations. |
+| 2026-10-26 | S10 | REVIEW | MySQL 8 schema (11 tables) & migration runner built, tested, and applied. All tables utf8mb4_unicode_ci. Set to REVIEW. |
 
 ---
 
 ## 9. START HERE
 
-Next suggested step: **S10** (Phase 1 — MySQL 8 schema + migrations). Reply: `YES S10` to begin.
+Next suggested step: **S11** (Phase 1 — Backend skeleton). Reply: `YES S11` to begin.

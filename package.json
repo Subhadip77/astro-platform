@@ -4,6 +4,8 @@
   "private": true,
   "scripts": {
     "test": "npm --prefix backend test",
-    "check:config": "npm --prefix backend run check:config"
+    "check:config": "npm --prefix backend run check:config",
+    "db:migrate": "npm --prefix backend run db:migrate",
+    "db:migrate:status": "npm --prefix backend run db:migrate:status"
   }
 }
