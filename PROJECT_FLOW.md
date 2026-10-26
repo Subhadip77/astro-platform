@@ -41,8 +41,8 @@ Flow: ⚪ → 🟡 → (YES) → 🔵 → 🟣 → 🟢   (any → 🔴 or ⚫)
 ### PHASE 0 — Setup
 | ID | Step | Status | Output |
 |----|------|--------|--------|
-| S00 | Repo, folders, `AGENTS.md`, `.gitignore`, `.env.example` | 🟣 REVIEW | repo skeleton |
-| S01 | Secrets and config (API keys in `.env` only) | ⚪ LOCKED | config loader |
+| S00 | Repo, folders, `AGENTS.md`, `.gitignore`, `.env.example` | 🟢 DONE | repo skeleton |
+| S01 | Secrets and config (API keys in `.env` only) | 🟣 REVIEW | config loader |
 | S02 | AstrologyAPI smoke test (1 call per endpoint family) | ⚪ LOCKED | `docs/api-notes.md` |
 
 ### PHASE 1 — Core (free tools = lead magnets)
@@ -349,6 +349,9 @@ If someone told you "Shani's Sade Sati has started", you probably felt worried. 
 | Date | Step | Decision | Note |
 |------|------|----------|------|
 | 2026-10-26 | S00 | YES | Approved by owner. Repo initialized, folder skeleton, .gitignore, and .env.example created. Set to REVIEW. |
+| 2026-10-26 | S00 | ACCEPT | S00 accepted by owner. Marked DONE. |
+| 2026-10-26 | S01 | YES | Approved by owner. Building secrets and config loader. |
+| 2026-10-26 | S01 | REVIEW | Config loader built with Zod validation, masking, deep freeze, and node:test suite. Set to REVIEW. |
 
 ---
 

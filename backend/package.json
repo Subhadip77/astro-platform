@@ -1,0 +1,17 @@
+{
+  "name": "astro-backend",
+  "version": "1.0.0",
+  "description": "Backend service for Astro Platform",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node --test test/**/*.test.js",
+    "check:config": "node src/config/check.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "zod": "^3.24.2"
+  }
+}
